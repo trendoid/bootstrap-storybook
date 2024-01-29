@@ -26,7 +26,7 @@
   "scripts": {
     "build": "vite build",
     "build-storybook": "storybook build",
-    "deploy-storybook": "gh-pages -d storybook-static",
+    "deploy-storybook": "gh-pages -d storybook-static --dotfiles --nojekyll",
     "lint": "stylelint src",
     "lint:fix": "npm run lint -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
