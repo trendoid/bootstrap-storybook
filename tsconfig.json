@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "forceConsistentCasingInFileNames": true,
+      "useDefineForClassFields": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "strict": true,
+      "jsx": "preserve",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "lib": ["ESNext", "DOM"],
+      "skipLibCheck": true,
+      "noEmit": true,
+      "types": ["vite/client"],
+      "paths": {
+        "/@": ["./src"],
+        "@components": ["./src/components"],
+      }
+    },
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.js"],
+    "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/*.test.ts", "src/**/*.stories.ts"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+  }

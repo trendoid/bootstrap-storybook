@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "composite": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true
+    },
+    "include": ["vite.config.ts"]
+  }

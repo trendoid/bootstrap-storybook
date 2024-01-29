@@ -18,28 +18,35 @@
       "url": "https://github.com/sponsors/trendoid"
     }
   ],
-  "main": "dist/js/bootstrap-storybook.js",
-  "module": "dist/js/bootstrap-storybook.esm.js",
+  "type": "module",
+  "main": "/dist/bootstrap-storybook.umd.js",
+  "module": "/dist/bootstrap-storybook.js",
   "sass": "scss/bootstrap-storybook.scss",
   "style": "dist/css/bootstrap-storybook.css",
   "scripts": {
+    "build": "vite build",
     "build-storybook": "storybook build",
     "deploy-storybook": "gh-pages -d storybook-static",
     "lint": "stylelint src",
     "lint:fix": "npm run lint -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build-storybook",
+    "start": "vite",
     "storybook": "storybook dev -p 6006"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.10",
     "@storybook/addon-essentials": "^7.6.10",
     "@storybook/addon-interactions": "^7.6.10",
     "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-themes": "^7.6.10",
     "@storybook/blocks": "^7.6.10",
     "@storybook/html": "^7.6.10",
     "@storybook/html-vite": "^7.6.10",
     "@storybook/test": "^7.6.10",
+    "autoprefixer": "^10.4.17",
     "gh-pages": "^6.1.1",
+    "pathe": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.70.0",
@@ -48,10 +55,14 @@
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.0.0",
     "typescript": "^5.3.3",
-    "vite": "^5.0.12"
+    "vite": "^5.0.12",
+    "vite-plugin-static-copy": "^1.0.1"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.2"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   }
 }
