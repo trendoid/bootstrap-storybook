@@ -9,6 +9,9 @@ const config: StorybookConfig = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    '@storybook/addon-themes',
+    '@storybook/addon-a11y',
+    '@storybook/addon-designs'
   ],
   framework: {
     name: "@storybook/html-vite",
@@ -17,5 +20,15 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  core: {
+    disableWhatsNewNotifications: true
+  },
+  staticDirs: ['../public'],
+  async viteFinal(config, { configType }) {
+    if(configType === "PRODUCTION") {
+      return {...config, base: './'};
+    }
+    return config;
+  }
 };
 export default config;
