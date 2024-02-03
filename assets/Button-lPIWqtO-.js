@@ -1,0 +1,1 @@
+const a=({primary:c=!1,size:o="medium",backgroundColor:e,label:r,onClick:n})=>{const t=document.createElement("button");t.type="button",t.innerText=r,n&&t.addEventListener("click",n);const s=c?"btn-primary":"btn-secondary";return t.className=["btn",`btn-${o}`,s].join(" "),e&&(t.style.backgroundColor=e),t};export{a as c};

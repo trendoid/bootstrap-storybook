@@ -1,1 +1,0 @@
-const c=({primary:n=!1,size:r="medium",backgroundColor:o,label:s,onClick:e})=>{const t=document.createElement("button");t.type="button",t.innerText=s,e&&t.addEventListener("click",e);const b=n?"storybook-button--primary":"storybook-button--secondary";return t.className=["storybook-button",`storybook-button--${r}`,b].join(" "),o&&(t.style.backgroundColor=o),t};export{c};

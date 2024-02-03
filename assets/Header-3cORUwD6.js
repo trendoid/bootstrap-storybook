@@ -1,4 +1,4 @@
-import{c as a}from"./Button-tc1dtBBr.js";const p=({user:n,onLogout:o,onLogin:i,onCreateAccount:c})=>{const t=document.createElement("header"),l=document.createElement("div");l.className="storybook-header",l.insertAdjacentHTML("afterbegin",`<div>
+import{c as a}from"./Button-lPIWqtO-.js";const p=({user:n,onLogout:o,onLogin:i,onCreateAccount:c})=>{const t=document.createElement("header"),l=document.createElement("div");l.className="storybook-header",l.insertAdjacentHTML("afterbegin",`<div>
     <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <g fill="none" fillRule="evenodd">
         <path
