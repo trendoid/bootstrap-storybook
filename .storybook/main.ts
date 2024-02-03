@@ -10,8 +10,10 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     '@storybook/addon-themes',
+    "@storybook/addon-docs",
     '@storybook/addon-a11y',
-    '@storybook/addon-designs'
+    '@storybook/addon-designs',
+    "@storybook/addon-mdx-gfm"
   ],
   framework: {
     name: "@storybook/html-vite",

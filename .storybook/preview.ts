@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/html";
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
 
 const preview: Preview = {
   parameters: {
@@ -9,6 +10,18 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    decorators: [
+      withThemeByDataAttribute({
+        themes: {
+          light: "light",
+          dark: "dark",
+          system: "system",
+        },
+        defaultTheme: "light",
+        parentSelector: "html",
+        attributeName: "data-bs-theme",
+      }),
+    ],
   },
 };
 
